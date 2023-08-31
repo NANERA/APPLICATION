@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/profile_fragment"
+    tools:context=".ProfileFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <EditText
+            android:textStyle="bold"
+            android:inputType="textPersonName"
+            android:id="@+id/home_name"
+            android:hint="Name"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_16sdp"
+            style="@style/edite_16"/>
+
+        <EditText
+            android:padding="@dimen/_10sdp"
+            android:drawableLeft="@drawable/email_online"
+            android:inputType="textEmailAddress"
+            android:id="@+id/home_email"
+            android:hint="Email Id"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_below="@id/home_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_16sdp"
+            style="@style/edite_16"/>
+        <EditText
+            android:drawableLeft="@drawable/persone_icon"
+            android:maxLength="10"
+            android:padding="@dimen/_10sdp"
+            android:inputType="phone"
+            android:id="@+id/home_contact"
+            android:hint="Contact No."
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_below="@id/home_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_16sdp"
+            style="@style/edite_16"/>
+
+        <RadioGroup
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_below="@id/home_contact"
+            android:id="@+id/home_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <RadioButton
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:id="@+id/home_male"
+                android:layout_below="@id/home_contact"
+                android:text="Male"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                style="@style/radio_14"/>
+            <RadioButton
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:id="@+id/home_Female"
+                android:layout_below="@id/home_male"
+                android:text="Female"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                style="@style/radio_14"/>
+        </RadioGroup>
+        <Spinner
+            android:popupBackground="@color/white_trans"
+            android:background="@color/white_trans"
+            android:id="@+id/home_city"
+            android:layout_below="@id/home_gender"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:editable="false"
+            android:layout_below="@+id/home_city"
+            android:textStyle="bold"
+            android:inputType="textEmailAddress"
+            android:id="@+id/home_dob"
+            android:hint="Date Of Birth"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/edite_16"/>
+        <Button
+            android:layout_below="@id/home_dob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/home_Edit_profile"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="Edit Profile"
+            style="@style/button_16_white"/>
+
+        <Button
+            android:visibility="gone"
+            android:layout_below="@id/home_Edit_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/home_Update_profile"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="Update Profile"
+            style="@style/button_16_white"/>
+
+        <Button
+            android:id="@+id/home_logout"
+            android:text="Logout"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_below="@id/home_Update_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/button_16_red"/>
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

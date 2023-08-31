@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/custome_background"
+    tools:context=".ProductDetailActivity">
+    <ImageView
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:id="@+id/product_detail_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp"/>
+    <TextView
+        android:textColor="@color/white"
+        style="@style/text_14"
+        android:id="@+id/product_detail_Name"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textColor="@color/white"
+        style="@style/text_14"
+        android:id="@+id/product_detail_price"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:justificationMode="inter_word"
+        android:textColor="@color/white"
+        style="@style/text_14"
+        android:id="@+id/product_detail_detail"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/product_detail_buynow"
+        android:text="Buy Now"
+        android:layout_marginTop="@dimen/_20sdp"
+        style="@style/button_16_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

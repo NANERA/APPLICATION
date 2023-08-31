@@ -3,7 +3,55 @@
     <style name="Base.Theme.OnlineIntershipe" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">#9F47E1</item>
     </style>
 
     <style name="Theme.OnlineIntershipe" parent="Base.Theme.OnlineIntershipe" />
+
+    <style name="edite_16" parent="Widget.AppCompat.EditText">
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingHorizontal">@dimen/_20sdp</item>
+        <item name="android:textSize">@dimen/_16sdp</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:textColor">@color/white_trans</item>
+        <item name="android:paddingVertical">@dimen/_10sdp</item>
+        <item name="android:layout_marginHorizontal">@dimen/_20sdp</item>
+        <item name="android:drawablePadding">@dimen/_10sdp</item>
+        <item name="android:background">@drawable/custome_bordar</item>
+    </style>
+
+    <style name="check_14" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:textColor">@color/white_trans</item>
+        <item name="android:buttonTint">@color/white_trans</item>
+    </style>
+
+    <style name="button_16_white" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/custome_buttone_white</item>
+        <item name="android:layout_marginHorizontal">@dimen/_20sdp</item>
+        <item name="android:textColor">@color/pink_red</item>
+        <item name="android:textSize">@dimen/_16sdp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="backgroundTint">@null</item>
+        <item name="textAllCaps">false</item>
+</style>
+    <style name="button_16_red" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/custome_byttone_red</item>
+        <item name="android:layout_marginHorizontal">@dimen/_20sdp</item>
+        <item name="android:textColor">@color/white_trans</item>
+        <item name="android:textSize">@dimen/_16sdp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="backgroundTint">@null</item>
+        <item name="textAllCaps">false</item>
+    </style>
+    <style name="text_14" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/white_trans</item>
+        <item name="android:textSize">@dimen/_14sdp</item>
+    </style>
+    <style name="radio_14" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="buttonTint">@color/white</item>
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:textColor">@color/white_trans</item>
+        <item name="android:layout_marginHorizontal">@dimen/_20sdp</item>
+    </style>
 </resources>
